@@ -24,9 +24,6 @@ end
 	end
 
 
-#student = Person.new("Chris")
-#instructor = person.new("Christina")
-
 student = Student.new("Chris")
 instructor = Instructor.new("Christina")
 
@@ -36,5 +33,5 @@ instructor.greet
 instructor.teach
 student.learn
 
-#student.teach #inheritance is one way
-instructor.learn #innheritance is one way
+#student.teach --->inheritance is one way which is why you get an error message
+#instructor.learn --->innheritance is one way which is why you get an error message
