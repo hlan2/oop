@@ -42,13 +42,13 @@ class Rover
 
 	def move
 		if @dir == "N"
-			@x += 1
+			@y += 1 
 		elsif @dir == "W"
-			@y -=1
+			@x -=1
 		elsif @dir == "S"
-			@x -= 1
+			@y -= 1
 		elsif @dir == "E"
-			@y += 1
+			@x += 1
 		end
 
 	end
@@ -57,7 +57,10 @@ end
 
 puts "Enter plateau size:"
 plateau = gets.chomp.split.map {|x| x.to_i} #.map goes through each element in array and returns it after an action, in this case, to an integer
-puts plateau.inspect # prints out array of 2 string
+# plateau = gets.chomp.split.map do |x|
+# 	x.to_i
+# end
+puts plateau.inspect # prints out what looks like an array. Also povides more info in other cases
 
 puts "Enter initial coordinates and direction:"
 initial_coords = gets.chomp.split
@@ -75,4 +78,4 @@ puts commands.inspect
 commands.each do |command|
 	rover1.read_instruction(command)
 	puts rover1.inspect
-end
+end	
