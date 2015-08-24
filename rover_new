@@ -1,7 +1,0 @@
-class Rover
-end
-
-puts "Enter plateau size:"
-plateau = gets.chomp.split
-puts plateau.inspect
-

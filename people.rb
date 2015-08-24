@@ -23,15 +23,14 @@ end
 
 	end
 
-
 student = Student.new("Chris")
 instructor = Instructor.new("Christina")
 
-student.greet 
-instructor.greet
+student.greet #will output student greeting
+instructor.greet #will output teacher greeting
 
-instructor.teach
-student.learn
+instructor.teach 
+student.learn	
 
 #student.teach --->inheritance is one way which is why you get an error message
 #instructor.learn --->innheritance is one way which is why you get an error message
